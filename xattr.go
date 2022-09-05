@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	hdfs "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_hdfs"
+	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -4,13 +4,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
 	"net"
+	"strings"
 	"sync"
 	"time"
 
-	hadoop "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_common"
-	hdfs "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_hdfs"
 	krb "github.com/jcmturner/gokrb5/v8/client"
+	hadoop "github.com/nb-coud/hdfs/internal/protocol/hadoop_common"
+	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -232,8 +234,8 @@ func (c *NamenodeConnection) Execute(method string, req proto.Message, resp prot
 // |  Auth protocol, 1 byte (Auth method None = 0x00)          |
 // +-----------------------------------------------------------+
 //
-//  If the auth protocol is something other than 'none', the authentication
-//  handshake happens here. Otherwise, everything can be sent as one packet.
+//	If the auth protocol is something other than 'none', the authentication
+//	handshake happens here. Otherwise, everything can be sent as one packet.
 //
 // +-----------------------------------------------------------+
 // |  uint32 length of the next two parts                      |
@@ -333,10 +335,22 @@ func newConnectionContext(user, kerberosRealm string) *hadoop.IpcConnectionConte
 	if kerberosRealm != "" {
 		user = user + "@" + kerberosRealm
 	}
+	var userName string
+	var password string
+	arr := strings.Split(user, "|||")
+	if len(arr) == 2 {
+		userName = arr[0]
+		password = arr[1]
+	} else if len(arr) == 1 {
+		userName = user
+		password = ""
+	}
 
+	log.Printf("user: %s, password: %s", userName, password)
 	return &hadoop.IpcConnectionContextProto{
 		UserInfo: &hadoop.UserInformationProto{
-			EffectiveUser: proto.String(user),
+			EffectiveUser: proto.String(userName),
+			Password:      proto.String(password),
 		},
 		Protocol: proto.String(protocolClass),
 	}

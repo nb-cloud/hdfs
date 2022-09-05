@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	hadoop "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_common"
-	hdfs "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_hdfs"
-	"github.com/colinmarc/hdfs/v2/internal/sasl"
+	hadoop "github.com/nb-coud/hdfs/internal/protocol/hadoop_common"
+	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
+	"github.com/nb-coud/hdfs/internal/sasl"
 )
 
 func getTestDigest() *digestMD5Handshake {

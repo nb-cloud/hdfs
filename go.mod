@@ -1,4 +1,4 @@
-module github.com/colinmarc/hdfs/v2
+module github.com/nb-coud/hdfs
 
 require (
 	github.com/jcmturner/gokrb5/v8 v8.4.2
