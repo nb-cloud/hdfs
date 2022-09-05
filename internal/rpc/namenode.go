@@ -4,13 +4,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
 	"net"
+	"strings"
 	"sync"
 	"time"
 
-	hadoop "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_common"
-	hdfs "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_hdfs"
 	krb "github.com/jcmturner/gokrb5/v8/client"
+	hadoop "github.com/mizy/hdfs/internal/protocol/hadoop_common"
+	hdfs "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -333,10 +335,22 @@ func newConnectionContext(user, kerberosRealm string) *hadoop.IpcConnectionConte
 	if kerberosRealm != "" {
 		user = user + "@" + kerberosRealm
 	}
+	var userName string
+	var password string
+	arr := strings.Split(user, "|||")
+	if len(arr) == 2 {
+		userName = arr[0]
+		password = arr[1]
+	} else if len(arr) == 1 {
+		userName = user
+		password = ""
+	}
 
+	log.Printf("user: %s, password: %s", userName, password)
 	return &hadoop.IpcConnectionContextProto{
 		UserInfo: &hadoop.UserInformationProto{
-			EffectiveUser: proto.String(user),
+			EffectiveUser: proto.String(userName),
+			Password:      proto.String(password),
 		},
 		Protocol: proto.String(protocolClass),
 	}

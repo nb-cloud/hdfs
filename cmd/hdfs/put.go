@@ -6,7 +6,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/colinmarc/hdfs/v2"
+	"github.com/mizy/hdfs"
 )
 
 func put(args []string) {

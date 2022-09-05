@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	hadoop "github.com/colinmarc/hdfs/v2/internal/protocol/hadoop_common"
 	"github.com/jcmturner/gokrb5/v8/crypto"
 	"github.com/jcmturner/gokrb5/v8/gssapi"
 	"github.com/jcmturner/gokrb5/v8/iana/keyusage"
 	krbtypes "github.com/jcmturner/gokrb5/v8/types"
+	hadoop "github.com/mizy/hdfs/internal/protocol/hadoop_common"
 	"google.golang.org/protobuf/proto"
 )
 
