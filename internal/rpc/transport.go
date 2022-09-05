@@ -4,7 +4,11 @@ import (
 	"errors"
 	"io"
 
+<<<<<<< HEAD
 	hadoop "github.com/mizy/hdfs/internal/protocol/hadoop_common"
+=======
+	hadoop "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
+>>>>>>> 20c54cf (save didi hdfs proto)
 	"google.golang.org/protobuf/proto"
 )
 

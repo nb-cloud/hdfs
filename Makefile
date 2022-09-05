@@ -4,7 +4,11 @@ GENERATED_PROTOS = $(shell echo "$(HADOOP_HDFS_PROTOS) $(HADOOP_COMMON_PROTOS)" 
 SOURCES = $(shell find . -name '*.go') $(GENERATED_PROTOS)
 
 # Protobuf needs one of these for every 'import "foo.proto"' in .protoc files.
+<<<<<<< HEAD
 PROTO_MAPPING = MSecurity.proto=github.com/mizy/hdfs/internal/protocol/hadoop_common
+=======
+PROTO_MAPPING = MSecurity.proto=github.com/nb-cloud/hdfs/internal/protocol/hadoop_common
+>>>>>>> 20c54cf (save didi hdfs proto)
 
 TAG ?= $(shell git describe --tag)
 ARCH = $(shell go env GOOS)-$(shell go env GOARCH)

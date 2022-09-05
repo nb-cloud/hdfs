@@ -10,7 +10,11 @@ import (
 	"text/tabwriter"
 	"time"
 
+<<<<<<< HEAD
 	"github.com/mizy/hdfs"
+=======
+	"github.com/nb-cloud/hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 func ls(paths []string, long, all, humanReadable bool) {

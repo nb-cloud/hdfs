@@ -7,7 +7,11 @@ import (
 	"path"
 	"text/tabwriter"
 
+<<<<<<< HEAD
 	"github.com/mizy/hdfs"
+=======
+	"github.com/nb-cloud/hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 func du(args []string, summarize, humanReadable bool) {

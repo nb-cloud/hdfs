@@ -29,7 +29,11 @@ syntax="proto2";
 option java_package = "org.apache.hadoop.hdfs.protocol.proto";
 option java_outer_classname = "HdfsProtos";
 option java_generate_equals_and_hash = true;
+<<<<<<< HEAD
 option go_package = "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs";
+=======
+option go_package = "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs";
+>>>>>>> 20c54cf (save didi hdfs proto)
 package hadoop.hdfs;
 
 import "Security.proto";

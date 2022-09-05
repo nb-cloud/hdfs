@@ -5,7 +5,11 @@ import (
 	"os"
 	"text/tabwriter"
 
+<<<<<<< HEAD
 	"github.com/mizy/hdfs"
+=======
+	"github.com/nb-cloud/hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 func df(humanReadable bool) {

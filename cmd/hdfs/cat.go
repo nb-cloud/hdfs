@@ -7,7 +7,11 @@ import (
 	"io"
 	"os"
 
+<<<<<<< HEAD
 	"github.com/mizy/hdfs"
+=======
+	"github.com/nb-cloud/hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 const tailSearchSize int64 = 16384

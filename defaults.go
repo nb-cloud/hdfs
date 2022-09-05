@@ -1,7 +1,11 @@
 package hdfs
 
 import (
+<<<<<<< HEAD
 	hdfs "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs"
+=======
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 // ServerDefaults represents the filesystem configuration stored on the

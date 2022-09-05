@@ -11,8 +11,13 @@ import (
 	"github.com/jcmturner/gokrb5/v8/iana/keyusage"
 	"github.com/jcmturner/gokrb5/v8/spnego"
 	krbtypes "github.com/jcmturner/gokrb5/v8/types"
+<<<<<<< HEAD
 	hadoop "github.com/mizy/hdfs/internal/protocol/hadoop_common"
 	"github.com/mizy/hdfs/internal/sasl"
+=======
+	hadoop "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
+	"github.com/nb-cloud/hdfs/internal/sasl"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 const saslRpcCallId = -33

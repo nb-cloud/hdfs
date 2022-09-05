@@ -29,7 +29,11 @@
 package hadoop_hdfs
 
 import (
+<<<<<<< HEAD
 	hadoop_common "github.com/mizy/hdfs/internal/protocol/hadoop_common"
+=======
+	hadoop_common "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
+>>>>>>> 20c54cf (save didi hdfs proto)
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

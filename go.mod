@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 module github.com/mizy/hdfs
+=======
+module github.com/nb-cloud/hdfs
+>>>>>>> 20c54cf (save didi hdfs proto)
 
 require (
 	github.com/jcmturner/gokrb5/v8 v8.4.2

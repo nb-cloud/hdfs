@@ -11,7 +11,11 @@ import (
 	krb "github.com/jcmturner/gokrb5/v8/client"
 	"github.com/jcmturner/gokrb5/v8/config"
 	"github.com/jcmturner/gokrb5/v8/credentials"
+<<<<<<< HEAD
 	"github.com/mizy/hdfs/hadoopconf"
+=======
+	"github.com/nb-cloud/hdfs/hadoopconf"
+>>>>>>> 20c54cf (save didi hdfs proto)
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

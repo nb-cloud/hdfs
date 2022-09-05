@@ -25,7 +25,11 @@ syntax = "proto2";
 option java_package = "org.apache.hadoop.ipc.protobuf";
 option java_outer_classname = "RpcHeaderProtos";
 option java_generate_equals_and_hash = true;
+<<<<<<< HEAD
 option go_package = "github.com/mizy/hdfs/internal/protocol/hadoop_common";
+=======
+option go_package = "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common";
+>>>>>>> 20c54cf (save didi hdfs proto)
 package hadoop.common;
 
 /**

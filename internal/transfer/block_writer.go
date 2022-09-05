@@ -8,7 +8,11 @@ import (
 	"net"
 	"time"
 
+<<<<<<< HEAD
 	hdfs "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs"
+=======
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 	"google.golang.org/protobuf/proto"
 )
 

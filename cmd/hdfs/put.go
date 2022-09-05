@@ -6,7 +6,11 @@ import (
 	"path"
 	"path/filepath"
 
+<<<<<<< HEAD
 	"github.com/mizy/hdfs"
+=======
+	"github.com/nb-cloud/hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 func put(args []string) {

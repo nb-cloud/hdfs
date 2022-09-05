@@ -7,7 +7,11 @@ import (
 	"net"
 	"time"
 
+<<<<<<< HEAD
 	hdfs "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs"
+=======
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
+>>>>>>> 20c54cf (save didi hdfs proto)
 )
 
 // ChecksumReader provides an interface for reading the "MD5CRC32" checksums of
