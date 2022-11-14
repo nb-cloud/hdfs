@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mizy/hdfs"
-	"github.com/mizy/hdfs/hadoopconf"
+	"github.com/nb-cloud/hdfs"
+	"github.com/nb-cloud/hdfs/hadoopconf"
 	"github.com/pborman/getopt"
 )
 

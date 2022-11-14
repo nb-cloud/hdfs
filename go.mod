@@ -1,4 +1,4 @@
-module github.com/mizy/hdfs
+module github.com/nb-cloud/hdfs
 
 require (
 	github.com/jcmturner/gokrb5/v8 v8.4.2

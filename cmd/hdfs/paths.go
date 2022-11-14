@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/mizy/hdfs"
+	"github.com/nb-cloud/hdfs"
 )
 
 var (

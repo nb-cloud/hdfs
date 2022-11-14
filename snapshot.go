@@ -1,7 +1,7 @@
 package hdfs
 
 import (
-	hdfs "github.com/mizy/hdfs/internal/protocol/hadoop_hdfs"
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
 )
 
 // AllowSnapshots marks a directory as available for snapshots.

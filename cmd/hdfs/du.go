@@ -7,7 +7,7 @@ import (
 	"path"
 	"text/tabwriter"
 
-	"github.com/mizy/hdfs"
+	"github.com/nb-cloud/hdfs"
 )
 
 func du(args []string, summarize, humanReadable bool) {

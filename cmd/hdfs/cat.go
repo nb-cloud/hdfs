@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/mizy/hdfs"
+	"github.com/nb-cloud/hdfs"
 )
 
 const tailSearchSize int64 = 16384

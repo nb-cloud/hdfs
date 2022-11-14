@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	hadoop "github.com/mizy/hdfs/internal/protocol/hadoop_common"
+	hadoop "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
 	"google.golang.org/protobuf/proto"
 )
 
