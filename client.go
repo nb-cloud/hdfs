@@ -99,6 +99,10 @@ type ClientOptions struct {
 	skipSaslForPrivilegedDatanodePorts bool
 }
 
+func (c *ClientOptions) SkipSaslForPrivilegedDatanodePorts(val bool) {
+	c.skipSaslForPrivilegedDatanodePorts = val
+}
+
 // ClientOptionsFromConf attempts to load any relevant configuration options
 // from the given Hadoop configuration and create a ClientOptions struct
 // suitable for creating a Client. Currently this sets the following fields
