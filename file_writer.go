@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
-	"github.com/nb-coud/hdfs/internal/transfer"
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
+	"github.com/nb-cloud/hdfs/internal/transfer"
 	"google.golang.org/protobuf/proto"
 )
 

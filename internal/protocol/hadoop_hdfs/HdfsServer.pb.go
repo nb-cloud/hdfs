@@ -32,7 +32,7 @@
 package hadoop_hdfs
 
 import (
-	_ "github.com/nb-coud/hdfs/internal/protocol/hadoop_common"
+	_ "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

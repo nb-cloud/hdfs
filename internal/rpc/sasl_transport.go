@@ -9,7 +9,7 @@ import (
 	"github.com/jcmturner/gokrb5/v8/gssapi"
 	"github.com/jcmturner/gokrb5/v8/iana/keyusage"
 	krbtypes "github.com/jcmturner/gokrb5/v8/types"
-	hadoop "github.com/nb-coud/hdfs/internal/protocol/hadoop_common"
+	hadoop "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
 	"google.golang.org/protobuf/proto"
 )
 

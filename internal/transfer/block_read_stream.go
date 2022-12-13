@@ -8,7 +8,7 @@ import (
 	"io"
 	"math"
 
-	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
 	"google.golang.org/protobuf/proto"
 )
 

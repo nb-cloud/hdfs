@@ -11,8 +11,8 @@ import (
 	"time"
 
 	krb "github.com/jcmturner/gokrb5/v8/client"
-	hadoop "github.com/nb-coud/hdfs/internal/protocol/hadoop_common"
-	hdfs "github.com/nb-coud/hdfs/internal/protocol/hadoop_hdfs"
+	hadoop "github.com/nb-cloud/hdfs/internal/protocol/hadoop_common"
+	hdfs "github.com/nb-cloud/hdfs/internal/protocol/hadoop_hdfs"
 	"google.golang.org/protobuf/proto"
 )
 

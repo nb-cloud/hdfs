@@ -6,7 +6,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/nb-coud/hdfs"
+	"github.com/nb-cloud/hdfs"
 )
 
 func put(args []string) {
